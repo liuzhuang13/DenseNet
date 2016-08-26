@@ -37,8 +37,10 @@ DenseNet (L=100, k=24)|5.83 |**3.74** | **23.42**|**19.25**
 0. Install Torch ResNet (https://github.com/facebook/fb.resnet.torch) following the instructions there. To reduce memory consumption, we recommend to install the [optnet](https://github.com/fmassa/optimize-net) package. 
 1. Add the file densenet.lua to the folder models/.
 2. Change the learning rate schedule in the file train.lua: inside function learningRate(), change line 171/173
-from ```decay = epoch >= 122 and 2 or epoch >= 81 and 1 or ```
- to ```decay = epoch >= 225 and 2 or epoch >= 150 and 1 or 0 ```
+from ```decay = epoch >= 122 and 2 or epoch >= 81 and 1 or 0```
+
+ to 
+ ```decay = epoch >= 225 and 2 or epoch >= 150 and 1 or 0 ```
 3. Train a DenseNet (L=40, k=12) on CIFAR-10+ using
 
 ```
