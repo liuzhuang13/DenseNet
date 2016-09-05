@@ -1,8 +1,10 @@
-#Densely Connected Convolutional Network (DenseNet)
+#Densely Connected Convolutional Networks (DenseNets)
 This repository contains the code for the paper [Densely Connected Convolutional Network](http://arxiv.org/abs/1608.06993). 
 
 
-The code is based on Facebook's implementation of ResNet (https://github.com/facebook/fb.resnet.torch)
+The code is based on Facebook's implementation of ResNet (https://github.com/facebook/fb.resnet.torch).
+
+Also, see our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe).
 
 ##Table of Contents
 0. [Introduction](#introduction)
