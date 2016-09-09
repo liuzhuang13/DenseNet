@@ -46,7 +46,8 @@ from ```decay = epoch >= 122 and 2 or epoch >= 81 and 1 or 0```
 
 ```
 th main.lua -netType densenet -depth 40 -dataset cifar10 -batchSize 64 -nEpochs 300 -optnet true
-```
+``` 
+In our experiment environment (cudnn v5, one TITAN X GPU), this takes about 6 hours to finish
 
 ###Note
 By default, the growth rate k is set to 12, dropout is disabled. To experiment with other settings, please change densenet.lua accordingly (see the comments in the code).
