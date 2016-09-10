@@ -6,13 +6,13 @@ The code is based on Facebook's implementation of ResNet (https://github.com/fac
 
 Also, see our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe).
 
-If you find this helps your research please consider citing:
+If you find this helps your research, please consider citing:
 
      @article{Huang2016Densely,
-     		author={Huang, Gao and Liu, Zhuang and Weinberger, Kilian Q.},
-     		title={Densely Connected Convolutional Networks},
+     		author = {Huang, Gao and Liu, Zhuang and Weinberger, Kilian Q.},
+     		title = {Densely Connected Convolutional Networks},
      		journal = {arXiv preprint arXiv:1608.06993},
-     		year={2016}
+     		year = {2016}
      }
 
 
