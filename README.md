@@ -4,7 +4,14 @@ This repository contains the code for the paper [Densely Connected Convolutional
 
 The code is based on Facebook's implementation of ResNet (https://github.com/facebook/fb.resnet.torch).
 
-Also, see our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe), and a more memory-efficient [Torch Implementation] (https://github.com/gaohuang/DenseNet_lite).
+Also, see 
+
+1. Our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe)
+2. Our more memory-efficient [Torch Implementation] (https://github.com/gaohuang/DenseNet_lite).
+3. [Tensorflow Implementation] (https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
+4. [Keras Implementation] (https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/DenseNet) by tdeboissiere. 
+5. [Chainer Implementation] (https://github.com/t-hanya/chainer-DenseNet) by t-hanya.
+6. [Chainer Implementation] (https://github.com/yasunorikudo/chainer-DenseNet) by yasunorikudo.
 
 If you find this helps your research, please consider citing:
 
