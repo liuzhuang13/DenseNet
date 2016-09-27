@@ -6,12 +6,13 @@ The code is based on Facebook's implementation of ResNet (https://github.com/fac
 
 Also, see 
 
-1. Our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe)
-2. Our more memory-efficient [Torch Implementation] (https://github.com/gaohuang/DenseNet_lite).
-3. [Tensorflow Implementation] (https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
-4. [Keras Implementation] (https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/DenseNet) by tdeboissiere. 
-5. [Chainer Implementation] (https://github.com/t-hanya/chainer-DenseNet) by t-hanya.
-6. [Chainer Implementation] (https://github.com/yasunorikudo/chainer-DenseNet) by yasunorikudo.
+0. Our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe)
+0. Our more memory-efficient [Torch Implementation] (https://github.com/gaohuang/DenseNet_lite).
+0. [Tensorflow Implementation] (https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
+0. [Keras Implementation] (https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/DenseNet) by tdeboissiere. 
+0. [Keras Implementation] (https://github.com/robertomest/convnet-study) by robertomest.
+0. [Chainer Implementation] (https://github.com/t-hanya/chainer-DenseNet) by t-hanya.
+0. [Chainer Implementation] (https://github.com/yasunorikudo/chainer-DenseNet) by yasunorikudo.
 
 If you find this helps your research, please consider citing:
 
