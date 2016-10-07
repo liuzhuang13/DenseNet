@@ -9,10 +9,12 @@ Also, see
 0. Our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe)
 0. Our more memory-efficient [Torch Implementation] (https://github.com/gaohuang/DenseNet_lite).
 0. [Tensorflow Implementation] (https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
+0. [Tensorflow Implementation] (https://github.com/LaurentMazare/deep-models/tree/master/densenet) by Laurent Mazare.
+0. [Lasagne Implementation] (https://github.com/Lasagne/Recipes/tree/master/papers/densenet) by Jan Schlüter.
 0. [Keras Implementation] (https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/DenseNet) by tdeboissiere. 
-0. [Keras Implementation] (https://github.com/robertomest/convnet-study) by robertomest.
-0. [Chainer Implementation] (https://github.com/t-hanya/chainer-DenseNet) by t-hanya.
-0. [Chainer Implementation] (https://github.com/yasunorikudo/chainer-DenseNet) by yasunorikudo.
+0. [Keras Implementation] (https://github.com/robertomest/convnet-study) by Roberto de Moura Estevão Filho.
+0. [Chainer Implementation] (https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya.
+0. [Chainer Implementation] (https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
 
 If you find this helps your research, please consider citing:
 
