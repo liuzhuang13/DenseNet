@@ -54,8 +54,7 @@ DenseNet (L=40, k=12) |7.00 |5.24 | 27.55|24.42
 DenseNet (L=100, k=12)|**5.77** |4.10 | 23.79|20.20
 DenseNet (L=100, k=24)|5.83 |**3.74** | **23.42**|**19.25**
 
-We're experimenting on ImageNet dataset, some preliminary results and pretrained models are coming out soon.
-
+We're experimenting on ImageNet dataset. For some preliminary results check [here](https://github.com/liuzhuang13/DenseNet/issues/7).
 
 ##Usage 
 0. Install Torch ResNet (https://github.com/facebook/fb.resnet.torch) following the instructions there. To reduce memory consumption, we recommend to install the [optnet](https://github.com/fmassa/optimize-net) package. 
