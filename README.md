@@ -48,11 +48,14 @@ Figure 2: A deep DenseNet with three dense blocks.
 ##Results
 The table below shows the results of DenseNets on CIFAR datasets. The "+" mark at the end denotes standard data augmentation (crop after zero-padding, and horizontal flip). For a DenseNet model, L denotes its depth and k denotes its growth rate. On CIFAR-10 and CIFAR-100 (without augmentation), Dropout with 0.2 drop rate is adopted.
 
-Method | CIFAR-10 | CIFAR-10+ | CIFAR-100 | CIFAR-100+ 
--------|:--------:|:--------:|:--------:|:--------:|
-DenseNet (L=40, k=12) |7.00 |5.24 | 27.55|24.42
-DenseNet (L=100, k=12)|**5.77** |4.10 | 23.79|20.20
-DenseNet (L=100, k=24)|5.83 |**3.74** | **23.42**|**19.25**
+Method | Parameters| CIFAR-10 | CIFAR-10+ | CIFAR-100 | CIFAR-100+ 
+-------|:-------|:--------:|:--------:|:--------:|:--------:|
+DenseNet (L=40, k=12) |1.0M |7.00 |5.24 | 27.55|24.42
+DenseNet (L=100, k=12)|7.0M |5.77 |4.10 | 23.79|20.20
+DenseNet (L=100, k=24)|27.2M |5.83 |3.74 | 23.42|19.25**
+DenseNet-BC (L=100, k=12)|0.8M |5.92 |4.51 | 24.15|22.27
+DenseNet-BC (L=250, k=24)|15.3M |**5.19** |3.62 | **19.64**|17.60
+DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
 
 We're experimenting on ImageNet dataset. For some preliminary results check [here](https://github.com/liuzhuang13/DenseNet/issues/7).
 
@@ -63,15 +66,15 @@ We're experimenting on ImageNet dataset. For some preliminary results check [her
 from ```decay = epoch >= 122 and 2 or epoch >= 81 and 1 or 0```
  to 
  ```decay = epoch >= 225 and 2 or epoch >= 150 and 1 or 0 ```
-3. Train a DenseNet (L=40, k=12) on CIFAR-10+ using
+3. Train a DenseNet-BC (L=100, k=12) on CIFAR-10+ using
 
 ```
-th main.lua -netType densenet -depth 40 -dataset cifar10 -batchSize 64 -nEpochs 300 -optnet true
+th main.lua -netType densenet -depth 100 -dataset cifar10 -batchSize 64 -nEpochs 300 -optnet true
 ``` 
-In our experiment environment (cudnn v5.1, one TITAN X GPU), this takes about 7 hours to finish
+
 
 ###Note
-By default, the growth rate k is set to 12, dropout is disabled. To experiment with other settings, please change densenet.lua accordingly (see the comments in the code).
+By default, the growth rate k is set to 12, bottleneck transformation is used, compression rate at transiton layers is 0.5,  dropout is disabled. To experiment with other settings, please change densenet.lua accordingly (see the comments in the code).
 
 ##Contact
 liuzhuangthu at gmail.com  
