@@ -57,7 +57,6 @@ DenseNet-BC (L=100, k=12)|0.8M |5.92 |4.51 | 24.15|22.27
 DenseNet-BC (L=250, k=24)|15.3M |**5.19** |3.62 | **19.64**|17.60
 DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
 
-We're experimenting on ImageNet dataset. For some preliminary results check [here](https://github.com/liuzhuang13/DenseNet/issues/7).
 
 ##Usage 
 0. Install Torch ResNet (https://github.com/facebook/fb.resnet.torch) following the instructions there. To reduce memory consumption, we recommend to install the [optnet](https://github.com/fmassa/optimize-net) package. 
