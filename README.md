@@ -1,10 +1,11 @@
 #Densely Connected Convolutional Networks (DenseNets)
+
 This repository contains the code for the paper [Densely Connected Convolutional Networks](http://arxiv.org/abs/1608.06993). 
 
 
-The code is based on Facebook's implementation of ResNet (https://github.com/facebook/fb.resnet.torch).
+The code is based on [fb.resnet.torch] (https://github.com/facebook/fb.resnet.torch).
 
-Also, see 
+Also, see
 
 0. Our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe)
 0. Our more memory-efficient [Torch Implementation] (https://github.com/gaohuang/DenseNet_lite).
@@ -13,8 +14,13 @@ Also, see
 0. [Lasagne Implementation] (https://github.com/Lasagne/Recipes/tree/master/papers/densenet) by Jan Schlüter.
 0. [Keras Implementation] (https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/DenseNet) by tdeboissiere. 
 0. [Keras Implementation] (https://github.com/robertomest/convnet-study) by Roberto de Moura Estevão Filho.
+0. [Keras Implementation] (https://github.com/titu1994/DenseNet) by Somshubra Majumdar.
 0. [Chainer Implementation] (https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya.
 0. [Chainer Implementation] (https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
+0. [Fully Convolutional DenseNets for segmentation] (https://github.com/SimJeg/FC-DenseNet) by Simon Jegou.
+
+Note most of them don't contain DenseNet-BC structures.
+
 
 If you find this helps your research, please consider citing:
 
@@ -45,17 +51,29 @@ Figure 2: A deep DenseNet with three dense blocks.
 
 
 
-##Results
+##Results on CIFAR
 The table below shows the results of DenseNets on CIFAR datasets. The "+" mark at the end denotes standard data augmentation (crop after zero-padding, and horizontal flip). For a DenseNet model, L denotes its depth and k denotes its growth rate. On CIFAR-10 and CIFAR-100 (without augmentation), Dropout with 0.2 drop rate is adopted.
 
 Method | Parameters| CIFAR-10 | CIFAR-10+ | CIFAR-100 | CIFAR-100+ 
--------|:-------|:--------:|:--------:|:--------:|:--------:|
+-------|:-------:|:--------:|:--------:|:--------:|:--------:|
 DenseNet (L=40, k=12) |1.0M |7.00 |5.24 | 27.55|24.42
 DenseNet (L=100, k=12)|7.0M |5.77 |4.10 | 23.79|20.20
 DenseNet (L=100, k=24)|27.2M |5.83 |3.74 | 23.42|19.25
 DenseNet-BC (L=100, k=12)|0.8M |5.92 |4.51 | 24.15|22.27
 DenseNet-BC (L=250, k=24)|15.3M |**5.19** |3.62 | **19.64**|17.60
 DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
+
+##ImageNet and Pretrained Models
+The models are trained under the same setting as in [fb.resnet.torch] (https://github.com/facebook/fb.resnet.torch). The error rates shown are 224x224 1-crop test errors.
+
+
+| Network       |  Top-1 error | Download |
+| ------------- | ----------- | ----------- |
+| DenseNet-121 (k=32)    |   25.0     | [Download (64.5MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HWFViYlVlZk9sdHc)       |
+| DenseNet-169 (k=32)    | 23.6       | Coming soon       |
+| DenseNet-201 (k=32)    | 22.5       | [Download (161.8MB)] (https://drive.google.com/open?id=0B8ReS-sYUS-HaDdpNmlWRjJkd3c)       |
+| DenseNet-161 (k=48)    | 22.2       | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
+
 
 
 ##Usage 
@@ -75,6 +93,13 @@ th main.lua -netType densenet -depth 100 -dataset cifar10 -batchSize 64 -nEpochs
 ###Note
 By default, the growth rate k is set to 12, bottleneck transformation is used, compression rate at transiton layers is 0.5,  dropout is disabled. To experiment with other settings, please change densenet.lua accordingly (see the comments in the code).
 
+##Updates
+
+12/03/2016:
+
+0. Add Imagenet results and pretrained models.
+1. Add DenseNet-BC structures.
+2. 
 ##Contact
 liuzhuangthu at gmail.com  
 gh349 at cornell.edu   
