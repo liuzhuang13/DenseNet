@@ -70,7 +70,7 @@ The models are trained under the same setting as in [fb.resnet.torch] (https://g
 | Network       |  Top-1 error | Download |
 | ------------- | ----------- | ----------- |
 | DenseNet-121 (k=32)    |   25.0     | [Download (64.5MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HWFViYlVlZk9sdHc)       |
-| DenseNet-169 (k=32)    | 23.6       | Coming soon       |
+| DenseNet-169 (k=32)    | 23.6       | [Download (114.4MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HY25Dc2VrUGlVSGc)       |
 | DenseNet-201 (k=32)    | 22.5       | [Download (161.8MB)] (https://drive.google.com/open?id=0B8ReS-sYUS-HaDdpNmlWRjJkd3c)       |
 | DenseNet-161 (k=48)    | 22.2       | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
 
