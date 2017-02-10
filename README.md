@@ -9,7 +9,8 @@ Also, see
 
 0. Our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe)
 0. Our space-efficient [Torch Implementation] (https://github.com/gaohuang/DenseNet_lite).
-0. Our much more space-efficient [Caffe Implementation] (https://github.com/Tongcheng/DN_CaffeScript).
+0. Our (much more) space-efficient [Caffe Implementation] (https://github.com/Tongcheng/DN_CaffeScript).
+0. [PyTorch Implementation (with BC structure)] (https://github.com/bamos/densenet.pytorch) by Brandon Amos.
 0. [Tensorflow Implementation] (https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
 0. [Tensorflow Implementation] (https://github.com/LaurentMazare/deep-models/tree/master/densenet) by Laurent Mazare.
 0. [Lasagne Implementation] (https://github.com/Lasagne/Recipes/tree/master/papers/densenet) by Jan Schlüter.
