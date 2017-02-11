@@ -26,12 +26,12 @@ Note most of them don't contain DenseNet-BC structures.
 
 If you find this helps your research, please consider citing:
 
-     @article{Huang2016Densely,
-     		author = {Huang, Gao and Liu, Zhuang and Weinberger, Kilian Q.},
-     		title = {Densely Connected Convolutional Networks},
-     		journal = {arXiv preprint arXiv:1608.06993},
-     		year = {2016}
-     }
+	@article{huang2016densely,
+	  title={Densely connected convolutional networks},
+	  author={Huang, Gao and Liu, Zhuang and Weinberger, Kilian Q and van der Maaten, Laurens},
+	  journal={arXiv preprint arXiv:1608.06993},
+	  year={2016}
+	}
 
 
 ##Table of Contents
@@ -80,8 +80,8 @@ The Caffe models have slightly higher error rates than Torch models because of d
 
 | Network       | Prototxt | Caffe  Model |
 | ------------- | ---------- | ----------- |
-| DenseNet-121 (k=32)    | [Download] (https://drive.google.com/open?id=0B4cvsEOB5eUCeVJHdWxBd0tpMU0) |  [Download (31MB)](https://drive.google.com/open?id=0B4cvsEOB5eUCbTBXeUFUQjZUcG8)       |
-| DenseNet-161 (k=48)    | Coming | Coming|
+| DenseNet-121 (k=32)    | [Download] (https://drive.google.com/open?id=0B4cvsEOB5eUCbV9wTlVtdWN6aG8) |  [Download (31MB)](https://drive.google.com/open?id=0B4cvsEOB5eUCTmRxY1c3aTExT3c)       |
+| DenseNet-161 (k=48)    | [Download] (https://drive.google.com/open?id=0B4cvsEOB5eUCVWZ1OG5pcE1YOEU) | Coming|
 
 
 ##Usage 
