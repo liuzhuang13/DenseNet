@@ -76,7 +76,7 @@ The Torch models are trained under the same setting as in [fb.resnet.torch] (htt
 | DenseNet-201 (k=32)    | 22.5       | [Download (161.8MB)] (https://drive.google.com/open?id=0B8ReS-sYUS-HaDdpNmlWRjJkd3c)       |
 | DenseNet-161 (k=48)    | 22.2       | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
 
-For ImageNet pretrained Caffe models, please see https://github.com/shicai/DenseNet-Caffe from [shicai](https://github.com/shicai). Also, we would like to thank [](https://github.com/szq0214) for help on Caffe models.
+For ImageNet pretrained Caffe models, please see https://github.com/shicai/DenseNet-Caffe from [shicai](https://github.com/shicai). Also, we would like to thank [szq0214](https://github.com/szq0214) for help on Caffe models.
 
 
 ##Usage 
