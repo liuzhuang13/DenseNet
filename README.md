@@ -65,7 +65,7 @@ DenseNet-BC (L=100, k=12)|0.8M |5.92 |4.51 | 24.15|22.27
 DenseNet-BC (L=250, k=24)|15.3M |**5.19** |3.62 | **19.64**|17.60
 DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
 
-##ImageNet and Pretrained Models
+##ImageNet and Pretrained Models (Torch and Caffe)
 The Torch models are trained under the same setting as in [fb.resnet.torch] (https://github.com/facebook/fb.resnet.torch). The error rates shown are 224x224 1-crop test errors.
 
 
@@ -76,12 +76,7 @@ The Torch models are trained under the same setting as in [fb.resnet.torch] (htt
 | DenseNet-201 (k=32)    | 22.5       | [Download (161.8MB)] (https://drive.google.com/open?id=0B8ReS-sYUS-HaDdpNmlWRjJkd3c)       |
 | DenseNet-161 (k=48)    | 22.2       | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
 
-The Caffe models have slightly higher error rates than Torch models because of different data augmentation and others. The models are provided by [Zhiqiang Shen](https://github.com/szq0214) from Fudan University.
-
-| Network       | Prototxt | Caffe  Model |
-| ------------- | ---------- | ----------- |
-| DenseNet-121 (k=32)    | [Download] (https://drive.google.com/open?id=0B4cvsEOB5eUCbV9wTlVtdWN6aG8) |  [Download (31MB)](https://drive.google.com/open?id=0B4cvsEOB5eUCTmRxY1c3aTExT3c)       |
-| DenseNet-161 (k=48)    | [Download] (https://drive.google.com/open?id=0B4cvsEOB5eUCVWZ1OG5pcE1YOEU) | Coming|
+For ImageNet pretrained Caffe models, please see https://github.com/shicai/DenseNet-Caffe from [shicai](https://github.com/shicai). Also, we would like to thank [](https://github.com/szq0214) for help on Caffe models.
 
 
 ##Usage 
