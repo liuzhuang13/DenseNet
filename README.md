@@ -10,19 +10,20 @@ Also, see
 0. Our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe)
 0. Our space-efficient [Torch Implementation] (https://github.com/gaohuang/DenseNet_lite).
 0. Our (much more) space-efficient [Caffe Implementation] (https://github.com/Tongcheng/DN_CaffeScript).
-0. [PyTorch Implementation] (https://github.com/andreasveit/densenet-pytorch) by Andreas Veit.
+0. [PyTorch Implementation (with BC structure)](https://github.com/andreasveit/densenet-pytorch) by Andreas Veit.
 0. [PyTorch Implementation (with BC structure)] (https://github.com/bamos/densenet.pytorch) by Brandon Amos.
 0. [Tensorflow Implementation] (https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
 0. [Tensorflow Implementation] (https://github.com/LaurentMazare/deep-models/tree/master/densenet) by Laurent Mazare.
+0. [Tensorflow Implementation (with BC structure)] (https://github.com/ikhlestov/vision_networks) by Illarion Khlestov.
 0. [Lasagne Implementation] (https://github.com/Lasagne/Recipes/tree/master/papers/densenet) by Jan Schlüter.
 0. [Keras Implementation] (https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/DenseNet) by tdeboissiere. 
 0. [Keras Implementation] (https://github.com/robertomest/convnet-study) by Roberto de Moura Estevão Filho.
-0. [Keras Implementation] (https://github.com/titu1994/DenseNet) by Somshubra Majumdar.
+0. [Keras Implementation (with BC structure)] (https://github.com/titu1994/DenseNet) by Somshubra Majumdar.
 0. [Chainer Implementation] (https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya.
 0. [Chainer Implementation] (https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
 0. [Fully Convolutional DenseNets for segmentation] (https://github.com/SimJeg/FC-DenseNet) by Simon Jegou.
 
-Note most of them don't contain DenseNet-BC structures.
+Note we didn't label all implementations which support BC structures.
 
 
 If you find this helps your research, please consider citing:
