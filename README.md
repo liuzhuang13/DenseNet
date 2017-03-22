@@ -7,9 +7,9 @@ The code is based on [fb.resnet.torch] (https://github.com/facebook/fb.resnet.to
 
 Also, see
 
-0. Our [Caffe Implementation] (https://github.com/liuzhuang13/DenseNetCaffe)
-0. Our space-efficient [Torch Implementation] (https://github.com/gaohuang/DenseNet_lite).
-0. Our (much more) space-efficient [Caffe Implementation] (https://github.com/Tongcheng/DN_CaffeScript).
+0. Our [Caffe Implementation](https://github.com/liuzhuang13/DenseNetCaffe)
+0. Our space-efficient [Torch Implementation](https://github.com/gaohuang/DenseNet_lite).
+0. Our (much more) space-efficient [Caffe Implementation](https://github.com/Tongcheng/DN_CaffeScript).
 0. [PyTorch Implementation (with BC structure)](https://github.com/andreasveit/densenet-pytorch) by Andreas Veit.
 0. [PyTorch Implementation (with BC structure)](https://github.com/bamos/densenet.pytorch) by Brandon Amos.
 0. [Tensorflow Implementation](https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
