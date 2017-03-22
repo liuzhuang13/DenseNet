@@ -3,7 +3,7 @@
 This repository contains the code for the paper [Densely Connected Convolutional Networks](http://arxiv.org/abs/1608.06993). 
 
 
-The code is based on [fb.resnet.torch] (https://github.com/facebook/fb.resnet.torch).
+The code is based on [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
 
 Also, see
 
