@@ -105,6 +105,9 @@ By default, the growth rate k is set to 12, bottleneck transformation is used, c
 0. Add Imagenet results and pretrained models.
 1. Add DenseNet-BC structures.
 
+03/29/2017:
+0. Add the code for imagenet training.
+
 ##Contact
 liuzhuangthu at gmail.com  
 gh349 at cornell.edu   
