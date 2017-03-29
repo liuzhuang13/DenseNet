@@ -101,7 +101,7 @@ th main.lua -netType densenet -depth 100 -dataset cifar10 -batchSize 64 -nEpochs
 The file densenet-imagenet.lua is for training ImageNet models presented in the paper. The usage is very similar. Please refer to [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch) for data preparation.
 
 ### Note
-By default, the growth rate k is set to 12, bottleneck transformation is used, compression rate at transiton layers is 0.5,  dropout is disabled. To experiment with other settings, please change densenet.lua accordingly (see the comments in the code).
+On CIFAR, by default, the growth rate k is set to 12, bottleneck transformation is used, compression rate at transiton layers is 0.5,  dropout is disabled. On ImageNet, the default model is densenet-121. To experiment with other settings, please change densenet.lua accordingly (see the comments in the code).
 
 ## Updates
 
