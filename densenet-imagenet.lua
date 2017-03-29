@@ -21,6 +21,7 @@ function createModel(opt)
       stages = {6, 12, 48, 32}
     elseif depth == 161 then
       stages = {6, 12, 36, 24}
+      growthRate = 48
     end
 
     --feature maps reduction rate at transition layer
