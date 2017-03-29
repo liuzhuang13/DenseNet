@@ -12,6 +12,8 @@ Also, see
 0. Our (much more) space-efficient [Caffe Implementation](https://github.com/Tongcheng/DN_CaffeScript).
 0. [PyTorch Implementation (with BC structure)](https://github.com/andreasveit/densenet-pytorch) by Andreas Veit.
 0. [PyTorch Implementation (with BC structure)](https://github.com/bamos/densenet.pytorch) by Brandon Amos.
+0. [MXNet Implementation](https://github.com/Nicatio/Densenet/tree/master/mxnet) by Nicatio.
+0. [MXNet Implementation (supporting ImageNet)](https://github.com/bruinxiong/densenet.mxnet) by Xiong Lin.
 0. [Tensorflow Implementation](https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
 0. [Tensorflow Implementation](https://github.com/LaurentMazare/deep-models/tree/master/densenet) by Laurent Mazare.
 0. [Tensorflow Implementation (with BC structure)](https://github.com/ikhlestov/vision_networks) by Illarion Khlestov.
@@ -82,6 +84,8 @@ For ImageNet pretrained Caffe models, please see https://github.com/shicai/Dense
 
 
 ## Usage 
+For training on CIFAR dataset,
+
 0. Install Torch ResNet (https://github.com/facebook/fb.resnet.torch) following the instructions there. To reduce memory consumption, we recommend to install the [optnet](https://github.com/fmassa/optimize-net) package. 
 1. Add the file densenet.lua to the folder models/.
 2. Change the learning rate schedule in the file train.lua: inside function learningRate(), change line 171/173
@@ -94,6 +98,8 @@ from ```decay = epoch >= 122 and 2 or epoch >= 81 and 1 or 0```
 th main.lua -netType densenet -depth 100 -dataset cifar10 -batchSize 64 -nEpochs 300 -optnet true
 ``` 
 
+The file densenet-imagenet.lua is for training ImageNet models presented in the paper. The usage is very similar. Please refer to [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch) for data preparation.
+
 ### Note
 By default, the growth rate k is set to 12, bottleneck transformation is used, compression rate at transiton layers is 0.5,  dropout is disabled. To experiment with other settings, please change densenet.lua accordingly (see the comments in the code).
 
@@ -101,11 +107,12 @@ By default, the growth rate k is set to 12, bottleneck transformation is used, c
 
 12/03/2016:
 
-0. Add Imagenet results and pretrained models.
-1. Add DenseNet-BC structures.
+1. Add Imagenet results and pretrained models.
+2. Add DenseNet-BC structures.
 
 03/29/2017:
-0. Add the code for imagenet training.
+
+1. Add the code for imagenet training.
 
 ## Contact
 liuzhuangthu at gmail.com  
