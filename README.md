@@ -1,6 +1,6 @@
 # Densely Connected Convolutional Networks (DenseNets) 
         
-This repository contains the code for the paper [Densely Connected Convolutional Networks](http://arxiv.org/abs/1608.06993). 
+This repository contains the code for the paper [Densely Connected Convolutional Networks](http://arxiv.org/abs/1608.06993) (to appear on CVPR 2017 as an oral presentation).
 
 
 The code is based on [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
@@ -69,9 +69,9 @@ DenseNet-BC (L=100, k=12)|0.8M |5.92 |4.51 | 24.15|22.27
 DenseNet-BC (L=250, k=24)|15.3M |**5.19** |3.62 | **19.64**|17.60
 DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
 
-## ImageNet and Pretrained Models (Torch and Caffe)
+## ImageNet and Pretrained Models
+###Torch
 The Torch models are trained under the same setting as in [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch). The error rates shown are 224x224 1-crop test errors.
-
 
 | Network       |  Top-1 error | Torch Model |
 | ------------- | ----------- | ----------- |
@@ -80,7 +80,23 @@ The Torch models are trained under the same setting as in [fb.resnet.torch](http
 | DenseNet-201 (k=32)    | 22.5       | [Download (161.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HaDdpNmlWRjJkd3c)       |
 | DenseNet-161 (k=48)    | 22.2       | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
 
-For ImageNet pretrained Caffe models, please see https://github.com/shicai/DenseNet-Caffe from [shicai](https://github.com/shicai). Also, we would like to thank [szq0214](https://github.com/szq0214) for help on Caffe models.
+###Caffe
+For ImageNet pretrained Caffe models, please see https://github.com/shicai/DenseNet-Caffe from @shicai. Also, we would like to thank @szq0214 for help on Caffe models.
+
+
+###PyTorch
+In PyTorch, ImageNet pretrained models can be directly loaded by 
+
+```import torchvision.models as models```
+```densenet = models.densenet_161(pretrained=True)```
+
+For ImageNet training, customized models can be constructed by simply calling
+```DenseNet(growth_rate=32, block_config=(6, 12, 24, 16), num_init_features=64, bn_size=4, drop_rate=0, num_classes=1000)```. 
+
+See more details at http://pytorch.org/docs/torchvision/models.html?highlight=densenet and https://github.com/pytorch/vision/blob/master/torchvision/models/densenet.py. 
+
+We would like to thank @gpleiss for this nice work in PyTorch.
+
 
 
 ## Usage 
@@ -113,6 +129,9 @@ On CIFAR, by default, the growth rate k is set to 12, bottleneck transformation 
 03/29/2017:
 
 1. Add the code for imagenet training.
+
+04/20/2017:
+1. Add usage of models in PyTorch.
 
 ## Contact
 liuzhuangthu at gmail.com  
