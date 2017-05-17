@@ -33,8 +33,8 @@ If you find this helps your research, please consider citing:
 	@article{huang2016densely,
 	  title={Densely connected convolutional networks},
 	  author={Huang, Gao and Liu, Zhuang and Weinberger, Kilian Q and van der Maaten, Laurens},
-	  journal={arXiv preprint arXiv:1608.06993},
-	  year={2016}
+	  journal={CVPR},
+	  year={2017}
 	}
 
 
@@ -68,6 +68,29 @@ DenseNet (L=100, k=24)|27.2M |5.83 |3.74 | 23.42|19.25
 DenseNet-BC (L=100, k=12)|0.8M |5.92 |4.51 | 24.15|22.27
 DenseNet-BC (L=250, k=24)|15.3M |**5.19** |3.62 | **19.64**|17.60
 DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
+
+## Wide-DenseNet for Reducing Memory and Time Consumption
+
+If you use DenseNet as a model in your learning task, to reduce the memory and time consumption, we recommend use a wide and shallow DenseNet, following the strategy of [wide residual networks](https://github.com/szagoruyko/wide-residual-networks). To obtain a wide DenseNet we set the depth to be smaller (e.g., L=40) and the growthRate to be larger (e.g., k=48).
+
+ We test a set of Wide-DenseNet-BCs and compareED the memory and time with the DenseNet-BC (L=100, k=12) shown above. We obtained the statistics using a single TITAN X card, with batch size 64, and without the optnet package in Torch.
+
+
+Method | Parameters| CIFAR-10+ | CIFAR-100+ | Time per Iteration | Memory 
+-------|:-------:|:--------:|:--------:|:--------:|:--------:|
+DenseNet-BC (L=100, k=12)|0.8M |4.51 |22.27 | 0.156s | 5452 MB
+Wide-DenseNet-BC (L=40, k=36)|1.5M |4.58 |22.30 | 0.130s|4008 MB
+Wide-DenseNet-BC (L=40, k=48)|2.7M |3.99 |20.29 | 0.165s|5245 MB
+Wide-DenseNet-BC (L=40, k=60)|4.3M |4.01 |19.99 | 0.223s|6508 MB
+
+Obersevations:
+
+1. Wide-DenseNet-BC (L=40, k=36) uses less memory/time while achieves about the same accuracy as DenseNet-BC (L=100, k=12). 
+2. Wide-DenseNet-BC (L=40, k=48) uses about the same memory/time as DenseNet-BC (L=100, k=12), while is much more accurate.
+
+Thus, for practical use, we suggest picking one model from those Wide-DenseNet-BCs.
+
+
 
 ## ImageNet and Pretrained Models
 ### Torch
