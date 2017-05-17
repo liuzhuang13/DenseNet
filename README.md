@@ -1,12 +1,21 @@
-# Densely Connected Convolutional Networks (DenseNets) 
-        
-This repository contains the code for the paper [Densely Connected Convolutional Networks](http://arxiv.org/abs/1608.06993) (to appear on CVPR 2017 as an oral presentation).
+# Densely Connected Convolutional Networks (DenseNets)
 
+The code for:
+        
+Gao Huang\*, Zhuang Liu\*, Kilian Weinberger, Laurens van der Maaten, ["Densely Connected Convolutional Networks"](http://arxiv.org/abs/1608.06993), CVPR 2017. (\* equal contribution)
 
 The code is based on [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
 
-Also, see
+Citation:
 
+	@inproceedings{huang2017densely,
+	  title={Densely connected convolutional networks},
+	  author={Huang, Gao and Liu, Zhuang and Weinberger, Kilian Q and van der Maaten, Laurens},
+	  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+	  year={2017}
+	}
+	
+## Other Implementations
 0. Our [Caffe Implementation](https://github.com/liuzhuang13/DenseNetCaffe)
 0. Our space-efficient [Torch Implementation](https://github.com/gaohuang/DenseNet_lite).
 0. Our (much more) space-efficient [Caffe Implementation](https://github.com/Tongcheng/DN_CaffeScript).
@@ -25,24 +34,8 @@ Also, see
 0. [Chainer Implementation](https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
 0. [Fully Convolutional DenseNets for segmentation](https://github.com/SimJeg/FC-DenseNet) by Simon Jegou.
 
-Note we didn't label all implementations which support BC structures.
+Note that we didn't list all implementations available on GitHub, and didn't label all implementations which support BC structures. 
 
-
-If you find this helps your research, please consider citing:
-
-	@article{huang2016densely,
-	  title={Densely connected convolutional networks},
-	  author={Huang, Gao and Liu, Zhuang and Weinberger, Kilian Q and van der Maaten, Laurens},
-	  journal={CVPR},
-	  year={2017}
-	}
-
-
-## Table of Contents
-0. [Introduction](#introduction)
-0. [Results](#results)
-0. [Usage](#usage)
-0. [Contact](#contact)
 
 ## Introduction
 DenseNet is a network architecture where each layer is directly connected to every other layer in a feed-forward fashion (within each *dense block*). For each layer, the feature maps of all preceding layers are treated as separate inputs whereas its own feature maps are passed on as inputs to all subsequent layers. This connectivity pattern yields state-of-the-art accuracies on CIFAR10/100 (with or without data augmentation) and SVHN.
@@ -60,7 +53,7 @@ Figure 2: A deep DenseNet with three dense blocks.
 ## Results on CIFAR
 The table below shows the results of DenseNets on CIFAR datasets. The "+" mark at the end denotes standard data augmentation (crop after zero-padding, and horizontal flip). For a DenseNet model, L denotes its depth and k denotes its growth rate. On CIFAR-10 and CIFAR-100 (without augmentation), Dropout with 0.2 drop rate is adopted.
 
-Method | Parameters| CIFAR-10 | CIFAR-10+ | CIFAR-100 | CIFAR-100+ 
+Model | Parameters| CIFAR-10 | CIFAR-10+ | CIFAR-100 | CIFAR-100+ 
 -------|:-------:|:--------:|:--------:|:--------:|:--------:|
 DenseNet (L=40, k=12) |1.0M |7.00 |5.24 | 27.55|24.42
 DenseNet (L=100, k=12)|7.0M |5.77 |4.10 | 23.79|20.20
@@ -76,12 +69,12 @@ If you use DenseNet as a model in your learning task, to reduce the memory and t
  We test a set of Wide-DenseNet-BCs and compareED the memory and time with the DenseNet-BC (L=100, k=12) shown above. We obtained the statistics using a single TITAN X card, with batch size 64, and without the optnet package in Torch.
 
 
-Method | Parameters| CIFAR-10+ | CIFAR-100+ | Time per Iteration | Memory 
+Model | Parameters| CIFAR-10+ | CIFAR-100+ | Time per Iteration | Memory 
 -------|:-------:|:--------:|:--------:|:--------:|:--------:|
-DenseNet-BC (L=100, k=12)|0.8M |4.51 |22.27 | 0.156s | 5452 MB
-Wide-DenseNet-BC (L=40, k=36)|1.5M |4.58 |22.30 | 0.130s|4008 MB
-Wide-DenseNet-BC (L=40, k=48)|2.7M |3.99 |20.29 | 0.165s|5245 MB
-Wide-DenseNet-BC (L=40, k=60)|4.3M |4.01 |19.99 | 0.223s|6508 MB
+DenseNet-BC (L=100, k=12)|0.8M |4.51 |22.27 | 0.156s | 5452MB
+Wide-DenseNet-BC (L=40, k=36)|1.5M |4.58 |22.30 | 0.130s|4008MB
+Wide-DenseNet-BC (L=40, k=48)|2.7M |3.99 |20.29 | 0.165s|5245MB
+Wide-DenseNet-BC (L=40, k=60)|4.3M |4.01 |19.99 | 0.223s|6508MB
 
 Obersevations:
 
@@ -104,23 +97,27 @@ The Torch models are trained under the same setting as in [fb.resnet.torch](http
 | DenseNet-161 (k=48)    | 22.2       | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
 
 ### Caffe
-For ImageNet pretrained Caffe models, please see https://github.com/shicai/DenseNet-Caffe from @shicai. Also, we would like to thank @szq0214 for help on Caffe models.
+For ImageNet pretrained Caffe models, please see https://github.com/shicai/DenseNet-Caffe. Also, we would like to thank @szq0214 for help on Caffe models.
 
 
 ### PyTorch
 In PyTorch, ImageNet pretrained models can be directly loaded by 
 
-```import torchvision.models as models```
-
-```densenet = models.densenet_161(pretrained=True)```
+```
+import torchvision.models as models
+densenet = models.densenet_161(pretrained=True)
+```
 
 For ImageNet training, customized models can be constructed by simply calling
 
-```DenseNet(growth_rate=32, block_config=(6, 12, 24, 16), num_init_features=64, bn_size=4, drop_rate=0, num_classes=1000)```. 
+```
+DenseNet(growth_rate=32, block_config=(6, 12, 24, 16), num_init_features=64, bn_size=4, drop_rate=0, num_classes=1000)
+```
 
-See more details at http://pytorch.org/docs/torchvision/models.html?highlight=densenet and https://github.com/pytorch/vision/blob/master/torchvision/models/densenet.py. 
+See more details at [PyTorch documentation on models](http://pytorch.org/docs/torchvision/models.html?highlight=densenet) and the [code for DenseNet](https://github.com/pytorch/vision/blob/master/torchvision/models/densenet.py). We would like to thank @gpleiss for this nice work in PyTorch.
 
-We would like to thank @gpleiss for this nice work in PyTorch.
+### Keras, Tensorflow and Theano
+Please see https://github.com/flyyufelix/DenseNet-Keras.
 
 
 
@@ -130,19 +127,22 @@ For training on CIFAR dataset,
 0. Install Torch ResNet (https://github.com/facebook/fb.resnet.torch) following the instructions there. To reduce memory consumption, we recommend to install the [optnet](https://github.com/fmassa/optimize-net) package. 
 1. Add the file densenet.lua to the folder models/.
 2. Change the learning rate schedule in the file train.lua: inside function learningRate(), change line 171/173
-from ```decay = epoch >= 122 and 2 or epoch >= 81 and 1 or 0```
+from 
+```decay = epoch >= 122 and 2 or epoch >= 81 and 1 or 0```
  to 
  ```decay = epoch >= 225 and 2 or epoch >= 150 and 1 or 0 ```
-3. Train a DenseNet-BC (L=100, k=12) on CIFAR-10+ using
+3. For example, train a Wide-DenseNet-BC (L=40, k=48) on CIFAR-10+ using
 
 ```
-th main.lua -netType densenet -depth 100 -dataset cifar10 -batchSize 64 -nEpochs 300 -optnet true
+th main.lua -netType densenet -depth 40 -dataset cifar10 -batchSize 64 -nEpochs 300 -optnet true
 ``` 
 
 The file densenet-imagenet.lua is for training ImageNet models presented in the paper. The usage is very similar. Please refer to [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch) for data preparation.
 
 ### Note
-On CIFAR, by default, the growth rate k is set to 12, bottleneck transformation is used, compression rate at transiton layers is 0.5,  dropout is disabled. On ImageNet, the default model is densenet-121. To experiment with other settings, please change densenet.lua accordingly (see the comments in the code).
+On CIFAR, by default, the growth rate k is set to 48, bottleneck transformation is used, compression rate at transiton layers is 0.5,  dropout is disabled. On ImageNet, the default model is densenet-121. To experiment with other settings, please change densenet.lua accordingly (see the comments in the code).
+
+If you use the model on images of different sizes from CIFAR/ImageNet, you may need to choose a different downsampling strategy.
 
 ## Updates
 
@@ -156,7 +156,16 @@ On CIFAR, by default, the growth rate k is set to 12, bottleneck transformation 
 1. Add the code for imagenet training.
 
 04/20/2017:
+
 1. Add usage of models in PyTorch.
+
+05/17/2017:
+
+1. Add Wide-DenseNet.
+2. Add keras, tf, theano link for pretrained models.
+
+
+
 
 ## Contact
 liuzhuangthu at gmail.com  

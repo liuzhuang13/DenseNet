@@ -4,7 +4,7 @@ require 'cudnn'
 
 local function createModel(opt)
     --growth rate
-    local growthRate = 12
+    local growthRate = 48
 
     --dropout rate, set it to 0 to disable dropout, non-zero number to enable dropout and set drop rate
     local dropRate = 0
