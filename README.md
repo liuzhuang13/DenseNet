@@ -2,6 +2,8 @@
 
 This repository contains the code for DenseNet introduced in the paper ["Densely Connected Convolutional Networks"](http://arxiv.org/abs/1608.06993) (CVPR 2017, Oral) by [Gao Huang](http://www.cs.cornell.edu/~gaohuang/)\*, [Zhuang Liu](https://github.com/liuzhuang13)\*, [Laurens van der Maaten](https://lvdmaaten.github.io/) and [Kilian Weinberger](https://www.cs.cornell.edu/~kilian/) (\* Authors contributed equally).
 
+**[Now with much memory efficient implementation!](https://github.com/liuzhuang13/DenseNet/tree/master/models)**
+
 The code is built on [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
 
 ### Citing DenseNet
@@ -57,7 +59,7 @@ By default, the code runs with the DenseNet-BC architecture, which has 1x1 convo
 ### Memory efficient implementation (newly added feature on June 6, 2017)
 There is an option *-optMemory* which is very useful for reducing GPU memory footprint when training a DenseNet. By default, the value is set to 2, which activates the *shareGradInput* function (with small modifications from [here](https://github.com/facebook/fb.resnet.torch/blob/master/models/init.lua#L102)). There are two extreme memory efficient modes (*-optMemory 3* or *-optMemory 4*) which use a customized densely connected layer. With *-optMemory 4*, the largest 190-layer DenseNet-BC on CIFAR can be trained on a single NVIDIA TitanX GPU (uses 8.3G of 12G) instead of fully using four GPUs with the standard (recursive concatenation) implementation . 
 
-More details about the memory efficient implementation are discusses [here](https://github.com/liuzhuang13/DenseNet/tree/master/models).
+More details about the memory efficient implementation are discussed [here](https://github.com/liuzhuang13/DenseNet/tree/master/models).
 
 
 ## Results on CIFAR
@@ -141,9 +143,9 @@ Thus, for practical use, we suggest picking one model from those Wide-DenseNet-B
 0. [Tensorflow Implementation](https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
 0. [Tensorflow Implementation](https://github.com/LaurentMazare/deep-models/tree/master/densenet) by Laurent Mazare.
 0. [Tensorflow Implementation (with BC structure)](https://github.com/ikhlestov/vision_networks) by Illarion Khlestov.
-0. [Lasagne Implementation](https://github.com/Lasagne/Recipes/tree/master/papers/densenet) by Jan Schlè´‰ter.
+0. [Lasagne Implementation](https://github.com/Lasagne/Recipes/tree/master/papers/densenet) by Jan Schl¬è¬´√§ter.
 0. [Keras Implementation](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/DenseNet) by tdeboissiere. 
-0. [Keras Implementation](https://github.com/robertomest/convnet-study) by Roberto de Moura Estevè´™o Filho.
+0. [Keras Implementation](https://github.com/robertomest/convnet-study) by Roberto de Moura Estev¬è¬´¬™o Filho.
 0. [Keras Implementation (with BC structure)](https://github.com/titu1994/DenseNet) by Somshubra Majumdar.
 0. [Chainer Implementation](https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya.
 0. [Chainer Implementation](https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
