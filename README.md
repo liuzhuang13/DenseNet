@@ -2,7 +2,7 @@
 
 This repository contains the code for DenseNet introduced in the paper ["Densely Connected Convolutional Networks"](http://arxiv.org/abs/1608.06993) (CVPR 2017, Oral) by [Gao Huang](http://www.cs.cornell.edu/~gaohuang/)\*, [Zhuang Liu](https://github.com/liuzhuang13)\*, [Laurens van der Maaten](https://lvdmaaten.github.io/) and [Kilian Weinberger](https://www.cs.cornell.edu/~kilian/) (\* Authors contributed equally).
 
-**[Now with much memory efficient implementation!](https://github.com/liuzhuang13/DenseNet/tree/master/models)**
+**[Now with much more memory efficient implementation!](https://github.com/liuzhuang13/DenseNet/tree/master/models)**
 
 The code is built on [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
 
