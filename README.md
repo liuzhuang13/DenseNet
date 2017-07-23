@@ -1,11 +1,11 @@
 # Densely Connected Convolutional Networks (DenseNets)
 
-This repository contains the code for DenseNet introduced in the paper ["Densely Connected Convolutional Networks"](http://arxiv.org/abs/1608.06993) (CVPR 2017, Oral) by [Gao Huang](http://www.cs.cornell.edu/~gaohuang/)\*, [Zhuang Liu](https://github.com/liuzhuang13)\*, [Laurens van der Maaten](https://lvdmaaten.github.io/) and [Kilian Weinberger](https://www.cs.cornell.edu/~kilian/) (\* Authors contributed equally).
+This repository contains the code for DenseNet introduced in the paper ["Densely Connected Convolutional Networks"](http://arxiv.org/abs/1608.06993) (CVPR 2017, Best Paper Award) by [Gao Huang](http://www.cs.cornell.edu/~gaohuang/)\*, [Zhuang Liu](https://github.com/liuzhuang13)\*, [Laurens van der Maaten](https://lvdmaaten.github.io/) and [Kilian Weinberger](https://www.cs.cornell.edu/~kilian/) (\* Authors contributed equally).
 
 
 **Now with much more memory efficient implementation!**
  
- Please check the [technical report](https://github.com/liuzhuang13/DenseNet/blob/master//efficient_densenet_techreport.pdf) and [code](https://github.com/liuzhuang13/DenseNet/tree/master/models) for more infomation.
+ Please check the [technical report](https://github.com/liuzhuang13/DenseNet/blob/master/efficient_densenet_techreport.pdf) and [code](https://github.com/liuzhuang13/DenseNet/tree/master/models) for more infomation.
  
 The code is built on [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
 
