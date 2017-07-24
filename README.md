@@ -76,7 +76,7 @@ th main.lua -netType densenet -dataset imagenet -data [dataFolder] -batchSize 25
 Please refer to [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch) for data preparation.
 
 ### DenseNet and DenseNet-BC
-By default, the code runs with the DenseNet-BC architecture, which has 1x1 convoultional *bottleneck* layers, and *compresses* the number of channels at each transition layer by 0.5. To run with the original DenseNet, simply use the options *-bottleneck false* and *-reduction 1*
+By default, the code runs with the DenseNet-BC architecture, which has 1x1 convolutional *bottleneck* layers, and *compresses* the number of channels at each transition layer by 0.5. To run with the original DenseNet, simply use the options *-bottleneck false* and *-reduction 1*
 
 ### Memory efficient implementation (newly added feature on June 6, 2017)
 There is an option *-optMemory* which is very useful for reducing GPU memory footprint when training a DenseNet. By default, the value is set to 2, which activates the *shareGradInput* function (with small modifications from [here](https://github.com/facebook/fb.resnet.torch/blob/master/models/init.lua#L102)). There are two extreme memory efficient modes (*-optMemory 3* or *-optMemory 4*) which use a customized densely connected layer. With *-optMemory 4*, the largest 190-layer DenseNet-BC on CIFAR can be trained on a single NVIDIA TitanX GPU (uses 8.3G of 12G) instead of fully using four GPUs with the standard (recursive concatenation) implementation . 
