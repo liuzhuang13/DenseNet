@@ -3,9 +3,7 @@
 This repository contains the code for DenseNet introduced in the paper ["Densely Connected Convolutional Networks"](http://arxiv.org/abs/1608.06993) (CVPR 2017, Best Paper Award) by [Gao Huang](http://www.cs.cornell.edu/~gaohuang/)\*, [Zhuang Liu](https://github.com/liuzhuang13)\*, [Laurens van der Maaten](https://lvdmaaten.github.io/) and [Kilian Weinberger](https://www.cs.cornell.edu/~kilian/) (\* Authors contributed equally).
 
 
-**Now with much more memory efficient implementation!**
- 
- Please check the [technical report](https://github.com/liuzhuang13/DenseNet/blob/master/efficient_densenet_techreport.pdf) and [code](https://github.com/liuzhuang13/DenseNet/tree/master/models) for more infomation.
+**Now with much more memory efficient implementation!**. Please check the [technical report](https://arxiv.org/pdf/1707.06990.pdf) and [code](https://github.com/liuzhuang13/DenseNet/tree/master/models) for more infomation.
  
 The code is built on [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
 
@@ -37,12 +35,12 @@ If you find DenseNet useful in your research, please consider citing:
 0. [Chainer Implementation](https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya.
 0. [Chainer Implementation](https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
 
+Note that we didn't list all implementations available on GitHub, and didn't label all implementations which support BC structures. 
+
 ## Projects build on DenseNets
 0. [Multi-Scale Dense Convolutional Networks for Efficient Prediction](https://github.com/gaohuang/MSDNet) by Gao Huang.
 0. [Fully Convolutional DenseNets for segmentation](https://github.com/SimJeg/FC-DenseNet) by Simon Jegou.
 
-
-Note that we didn't list all implementations available on GitHub, and didn't label all implementations which support BC structures. 
 
 ## Contents
 1. [Introduction](#introduction)
@@ -136,11 +134,11 @@ See more details at [PyTorch documentation on models](http://pytorch.org/docs/to
 Please see https://github.com/flyyufelix/DenseNet-Keras.
 
 
-## Wide-DenseNet for better Time/Accuracy and Time/Memory Tradeoff
+## Wide-DenseNet for better Time/Accuracy and Memory/Accuracy Tradeoff
 
 If you use DenseNet as a model in your learning task, to reduce the memory and time consumption, we recommend use a wide and shallow DenseNet, following the strategy of [wide residual networks](https://github.com/szagoruyko/wide-residual-networks). To obtain a wide DenseNet we set the depth to be smaller (e.g., L=40) and the growthRate to be larger (e.g., k=48).
 
-We test a set of Wide-DenseNet-BCs and compareED the memory and time with the DenseNet-BC (L=100, k=12) shown above. We obtained the statistics using a single TITAN X card, with batch size 64, and without the optnet package in Torch.
+We test a set of Wide-DenseNet-BCs and compared the memory and time with the DenseNet-BC (L=100, k=12) shown above. We obtained the statistics using a single TITAN X card, with batch size 64, and without any memory optimization.
 
 
 Model | Parameters| CIFAR-10+ | CIFAR-100+ | Time per Iteration | Memory 
