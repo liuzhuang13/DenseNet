@@ -18,15 +18,35 @@ If you find DenseNet useful in your research, please consider citing:
 	  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
 	  year={2017}
 	}
-	
+
+
+## Other Implementations
+0. Our [Caffe Implementation](https://github.com/liuzhuang13/DenseNetCaffe)
+0. Our space-efficient [Torch Implementation](https://github.com/gaohuang/DenseNet_lite).
+0. Our (much more) space-efficient [Caffe Implementation](https://github.com/Tongcheng/DN_CaffeScript).
+0. [PyTorch Implementation (with BC structure)](https://github.com/andreasveit/densenet-pytorch) by Andreas Veit.
+0. [PyTorch Implementation (with BC structure)](https://github.com/bamos/densenet.pytorch) by Brandon Amos.
+0. [MXNet Implementation](https://github.com/Nicatio/Densenet/tree/master/mxnet) by Nicatio.
+0. [MXNet Implementation (supporting ImageNet)](https://github.com/bruinxiong/densenet.mxnet) by Xiong Lin.
+0. [Tensorflow Implementation](https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
+0. [Tensorflow Implementation](https://github.com/LaurentMazare/deep-models/tree/master/densenet) by Laurent Mazare.
+0. [Tensorflow Implementation (with BC structure)](https://github.com/ikhlestov/vision_networks) by Illarion Khlestov.
+0. [Lasagne Implementation](https://github.com/Lasagne/Recipes/tree/master/papers/densenet) by Jan Schlüter.
+0. [Keras Implementation](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/DenseNet) by tdeboissiere. 
+0. [Keras Implementation](https://github.com/robertomest/convnet-study) by Roberto de Moura Estevão Filho.
+0. [Keras Implementation (with BC structure)](https://github.com/titu1994/DenseNet) by Somshubra Majumdar.
+0. [Chainer Implementation](https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya.
+0. [Chainer Implementation](https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
+0. [Fully Convolutional DenseNets for segmentation](https://github.com/SimJeg/FC-DenseNet) by Simon Jegou.
+
+Note that we didn't list all implementations available on GitHub, and didn't label all implementations which support BC structures. 
 
 ## Contents
 1. [Introduction](#introduction)
 2. [Usage](#usage)
 3. [Results on CIFAR](#results-on-cifar)
 4. [Results on ImageNet and Pretrained Models](#results-on-imagenet-and-pretrained-models)
-5. [Other Implementations](#other-implementations) (in Caffe, TensorFlow, PyTorch, Keras, Lasagne, MXNet and Chainer)
-6. [Updates](#updates)
+5. [Updates](#updates)
 
 
 ## Introduction
@@ -134,27 +154,6 @@ Obersevations:
 
 Thus, for practical use, we suggest picking one model from those Wide-DenseNet-BCs.
 
-
-## Other Implementations
-0. Our [Caffe Implementation](https://github.com/liuzhuang13/DenseNetCaffe)
-0. Our space-efficient [Torch Implementation](https://github.com/gaohuang/DenseNet_lite).
-0. Our (much more) space-efficient [Caffe Implementation](https://github.com/Tongcheng/DN_CaffeScript).
-0. [PyTorch Implementation (with BC structure)](https://github.com/andreasveit/densenet-pytorch) by Andreas Veit.
-0. [PyTorch Implementation (with BC structure)](https://github.com/bamos/densenet.pytorch) by Brandon Amos.
-0. [MXNet Implementation](https://github.com/Nicatio/Densenet/tree/master/mxnet) by Nicatio.
-0. [MXNet Implementation (supporting ImageNet)](https://github.com/bruinxiong/densenet.mxnet) by Xiong Lin.
-0. [Tensorflow Implementation](https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
-0. [Tensorflow Implementation](https://github.com/LaurentMazare/deep-models/tree/master/densenet) by Laurent Mazare.
-0. [Tensorflow Implementation (with BC structure)](https://github.com/ikhlestov/vision_networks) by Illarion Khlestov.
-0. [Lasagne Implementation](https://github.com/Lasagne/Recipes/tree/master/papers/densenet) by Jan Schlüter.
-0. [Keras Implementation](https://github.com/tdeboissiere/DeepLearningImplementations/tree/master/DenseNet) by tdeboissiere. 
-0. [Keras Implementation](https://github.com/robertomest/convnet-study) by Roberto de Moura Estevão Filho.
-0. [Keras Implementation (with BC structure)](https://github.com/titu1994/DenseNet) by Somshubra Majumdar.
-0. [Chainer Implementation](https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya.
-0. [Chainer Implementation](https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
-0. [Fully Convolutional DenseNets for segmentation](https://github.com/SimJeg/FC-DenseNet) by Simon Jegou.
-
-Note that we didn't list all implementations available on GitHub, and didn't label all implementations which support BC structures. 
 
 
 ## Updates
