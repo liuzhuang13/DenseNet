@@ -121,7 +121,7 @@ In PyTorch, ImageNet pretrained models can be directly loaded by
 
 ```
 import torchvision.models as models
-densenet = models.densenet_161(pretrained=True)
+densenet = models.densenet161(pretrained=True)
 ```
 
 For ImageNet training, customized models can be constructed by simply calling
