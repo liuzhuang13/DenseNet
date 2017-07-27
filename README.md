@@ -20,9 +20,10 @@ If you find DenseNet useful in your research, please consider citing:
 
 ## Other Implementations
 0. Our [Caffe Implementation](https://github.com/liuzhuang13/DenseNetCaffe)
-0. Our space-efficient [Caffe Implementation](https://github.com/Tongcheng/DN_CaffeScript).
-0. [PyTorch Implementation (with BC structure)](https://github.com/andreasveit/densenet-pytorch) by Andreas Veit.
-0. [PyTorch Implementation (with BC structure)](https://github.com/bamos/densenet.pytorch) by Brandon Amos.
+0. Our memory-efficient [Caffe Implementation](https://github.com/Tongcheng/DN_CaffeScript).
+0. Our memory-efficient [PyTorch Implementation](https://github.com/gpleiss/efficient_densenet_pytorch).
+0. [PyTorch Implementation](https://github.com/andreasveit/densenet-pytorch) by Andreas Veit.
+0. [PyTorch Implementation](https://github.com/bamos/densenet.pytorch) by Brandon Amos.
 0. [MXNet Implementation](https://github.com/Nicatio/Densenet/tree/master/mxnet) by Nicatio.
 0. [MXNet Implementation (supporting ImageNet)](https://github.com/bruinxiong/densenet.mxnet) by Xiong Lin.
 0. [Tensorflow Implementation](https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
