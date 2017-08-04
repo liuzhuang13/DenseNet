@@ -22,7 +22,7 @@ function M.parse(arg)
    cmd:option('-nGPU',       1,          'Number of GPUs to use by default')
    cmd:option('-backend',    'cudnn',    'Options: cudnn | cunn')
    cmd:option('-cudnn',      'fastest',  'Options: fastest | default | deterministic')
-   cmd:option('-gen',        '../gen',      'Path to save generated files')
+   cmd:option('-gen',        'gen',      'Path to save generated files')
    cmd:option('-precision', 'single',    'Options: single | double | half')
    ------------- Data options ------------------------
    cmd:option('-nThreads',        2, 'number of data loading threads')
