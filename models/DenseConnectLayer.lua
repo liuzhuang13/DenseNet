@@ -1,7 +1,6 @@
 require 'nn'
 require 'cudnn'
 require 'cunn'
-local nninit = require 'nninit'
 
 
 local function ShareGradInput(module, key)
