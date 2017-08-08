@@ -19,7 +19,7 @@ If you find DenseNet useful in your research, please consider citing:
 
 
 ## Other Implementations
-0. Our [Caffe Implementation](https://github.com/liuzhuang13/DenseNetCaffe)
+0. Our [Caffe Implementation](https://github.com/liuzhuang13/DenseNetCaffe).
 0. Our memory-efficient [Caffe Implementation](https://github.com/Tongcheng/DN_CaffeScript).
 0. Our memory-efficient [PyTorch Implementation](https://github.com/gpleiss/efficient_densenet_pytorch).
 0. [PyTorch Implementation](https://github.com/andreasveit/densenet-pytorch) by Andreas Veit.
@@ -36,7 +36,7 @@ If you find DenseNet useful in your research, please consider citing:
 0. [Chainer Implementation](https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya.
 0. [Chainer Implementation](https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
 
-Note that we didn't list all implementations available on GitHub, and didn't label all implementations which support BC structures. 
+Note that we only listed some early implementations here, and didn't label all implementations which support BC structures. 
 
 ## Projects build on DenseNets
 0. [Multi-Scale Dense Convolutional Networks for Efficient Prediction](https://github.com/gaohuang/MSDNet) by Gao Huang.
