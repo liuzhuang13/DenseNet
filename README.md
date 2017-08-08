@@ -40,6 +40,7 @@ Note that we didn't list all implementations available on GitHub, and didn't lab
 ## Projects build on DenseNets
 0. [Multi-Scale Dense Convolutional Networks for Efficient Prediction](https://github.com/gaohuang/MSDNet) by Gao Huang.
 0. [Fully Convolutional DenseNets for segmentation](https://github.com/SimJeg/FC-DenseNet) by Simon Jegou.
+0. [DSOD: Learning Deeply Supervised Object Detectors from Scratch](https://github.com/szq0214/DSOD) by Zhiqiang Shen, Zhuang Liu, etc. (In ICCV 2017)
 
 
 ## Contents
