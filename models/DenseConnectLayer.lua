@@ -27,7 +27,10 @@ function DenseConnectLayerStandard(nChannels, opt)
    net:add(cudnn.SpatialConvolution(nChannels, opt.growthRate, 3, 3, 1, 1, 1, 1))
    if opt.dropRate > 0 then net:add(nn.Dropout(opt.dropRate)) end
 
-   return net
+   return nn.Sequential()
+      :add(nn.Concat(2)
+         :add(nn.Identity())
+         :add(net))  
 end
 
 --------------------------------------------------------------------------------

@@ -66,9 +66,8 @@ Figure 2: A deep DenseNet with three dense blocks.
 
 
 ## Usage 
-0. Install Torch ResNet (https://github.com/facebook/fb.resnet.torch) and required dependencies like Torch and cuDNN.
-1. Add the files **densenet.lua** and **DenseConnectLayer.lua** to the folder **models/**.
-2. Replace **opts.lua**, **train.lua** and **models/init.lua** in the original repo by the corresponding files in this repo.
+0. Install Torch and required dependencies like cuDNN. See the instructions [here](https://github.com/facebook/fb.resnet.torch/blob/master/INSTALL.md) for a step-by-step guide.
+1. Clone this repo: ```git clone https://github.com/liuzhuang13/DenseNet.git```
 
 As an example, the following command trains a DenseNet-BC with depth L=100 and growth rate k=12 on CIFAR-10:
 ```
@@ -174,6 +173,9 @@ Thus, for practical use, we suggest picking one model from those Wide-DenseNet-B
 
 
 ## Updates
+**08/23/2017:**
+
+1. Add supporting code, so one can simply *git clone* and run.
 
 **06/06/2017:**
 

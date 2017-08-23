@@ -8,6 +8,8 @@
 --
 --  The training loop and learning rate schedule
 --
+-- Code modified for DenseNet (https://arxiv.org/abs/1608.06993) by Gao Huang.
+-- 
 
 local optim = require 'optim'
 
@@ -198,9 +200,9 @@ end
 
 ------for LR------
 function Trainer:learningRateCosine(epoch, iter, nBatches)
-   local nEpochs_cur = self.opt.nEpochs
-   local T_total = nEpochs_cur * nBatches
-   local T_cur = ((epoch-1) % nEpochs_cur) * nBatches + iter
+   local nEpochs = self.opt.nEpochs
+   local T_total = nEpochs * nBatches
+   local T_cur = ((epoch-1) % nEpochs) * nBatches + iter
    return 0.5 * self.opt.LR * (1 + torch.cos(math.pi * T_cur / T_total))
 end
 ------for LR------

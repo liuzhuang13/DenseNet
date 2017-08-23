@@ -9,6 +9,11 @@
 --  Generic model creating code. For the specific ResNet model see
 --  models/resnet.lua
 --
+-- Code modified for DenseNet (https://arxiv.org/abs/1608.06993) by Gao Huang.
+-- 
+-- More details about the memory efficient implementation can be found in the 
+-- technique report "Memory-Efficient Implementation of DenseNets" 
+-- (https://arxiv.org/pdf/1707.06990.pdf)
 
 require 'nn'
 require 'cunn'
@@ -146,7 +151,6 @@ function M.shareGradInput(model, opt)
       end
       m.gradInput = torch[opt.tensorType:match('torch.(%a+)')](cache[i % 2], 1, 0)
    end
-   print(cache)
 end
 
 function M.sharePrevOutput(model, opt)
