@@ -104,7 +104,7 @@ DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
 ## Results on ImageNet and Pretrained Models
 ### Torch
 
-####Models in the original paper
+#### Models in the original paper
 The Torch models are trained under the same setting as in [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch). The error rates shown are 224x224 1-crop test errors.
 
 | Network       |  Top-1 error | Torch Model |
@@ -114,7 +114,7 @@ The Torch models are trained under the same setting as in [fb.resnet.torch](http
 | DenseNet-201 (k=32)  | 22.5     | [Download (161.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HaDdpNmlWRjJkd3c)       |
 | DenseNet-161 (k=48)  | 22.2     | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
 
-####Models in the tech report
+#### Models in the tech report
 More accurate models trained with the memory efficient implementation in the [technical report](https://arxiv.org/pdf/1707.06990.pdf). 
 
 
