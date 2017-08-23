@@ -104,6 +104,8 @@ DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
 
 ## Results on ImageNet and Pretrained Models
 ### Torch
+
+####Models in the original paper
 The Torch models are trained under the same setting as in [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch). The error rates shown are 224x224 1-crop test errors.
 
 | Network       |  Top-1 error | Torch Model |
@@ -112,6 +114,17 @@ The Torch models are trained under the same setting as in [fb.resnet.torch](http
 | DenseNet-169 (k=32)  | 23.6     | [Download (114.4MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HY25Dc2VrUGlVSGc)       |
 | DenseNet-201 (k=32)  | 22.5     | [Download (161.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HaDdpNmlWRjJkd3c)       |
 | DenseNet-161 (k=48)  | 22.2     | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
+
+####Models in the tech report
+More accurate models trained with the memory efficient implementation in the [technical report](https://arxiv.org/pdf/1707.06990.pdf). [Download](https://www.dropbox.com/sh/ob63o1vdib0as3k/AADPw83zckVdLhmpVL8dlnGJa?dl=0).
+
+| Network       |  Top-1 error | 
+| ------------- | ----------- |
+| DenseNet-264 (k=32)  |  22.1 |    
+| DenseNet_232 (k=48)  | 21.2 | 
+| DenseNet-cosine-264 (k=32) | 21.6  |  
+| DenseNet-cosine-264 (k=48) | 20.4   | 
+
 
 ### Caffe
 For ImageNet pretrained Caffe models, please see https://github.com/shicai/DenseNet-Caffe. Also, we would like to thank @szq0214 for help on Caffe models.
