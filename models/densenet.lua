@@ -29,9 +29,7 @@ local function createModel(opt)
       if opt.optMemory >= 3 then
          model:add(nn.DenseConnectLayerCustom(nChannels, opt))
       else
-         model:add(nn.Concat(2)
-            :add(nn.Identity())
-            :add(DenseConnectLayerStandard(nChannels, opt)))      
+         model:add(DenseConnectLayerStandard(nChannels, opt))     
       end
    end
 
