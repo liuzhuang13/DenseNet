@@ -115,14 +115,15 @@ The Torch models are trained under the same setting as in [fb.resnet.torch](http
 | DenseNet-161 (k=48)  | 22.2     | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
 
 ####Models in the tech report
-More accurate models trained with the memory efficient implementation in the [technical report](https://arxiv.org/pdf/1707.06990.pdf). [Download](https://www.dropbox.com/sh/ob63o1vdib0as3k/AADPw83zckVdLhmpVL8dlnGJa?dl=0).
+More accurate models trained with the memory efficient implementation in the [technical report](https://arxiv.org/pdf/1707.06990.pdf). 
 
-| Network       |  Top-1 error | 
-| ------------- | ----------- |
-| DenseNet-264 (k=32)  |  22.1 |    
-| DenseNet_232 (k=48)  | 21.2 | 
-| DenseNet-cosine-264 (k=32) | 21.6  |  
-| DenseNet-cosine-264 (k=48) | 20.4   | 
+
+| Network       |  Top-1 error | Torch Model |
+| ------------- | ----------- | ------------ |
+| DenseNet-264 (k=32)  |  22.1 |    [Download (256MB)](https://drive.google.com/file/d/0By1NwtA2JPGzdVRqOEotMUZrbTA/view?usp=sharing)
+| DenseNet-232 (k=48)  | 21.2 | [Download (426MB)](https://drive.google.com/open?id=0By1NwtA2JPGzdkRDaWQ5M3VHTDg)
+| DenseNet-cosine-264 (k=32) | 21.6  |  [Download (256MB)](https://drive.google.com/file/d/0By1NwtA2JPGzRDhxWGo2a3pOTjA/view?usp=sharing)
+| DenseNet-cosine-264 (k=48) | 20.4   | [Download (557MB)](https://drive.google.com/file/d/0By1NwtA2JPGzcnFDSE1HQVh4c0k/view?usp=sharing)
 
 
 ### Caffe
