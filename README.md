@@ -26,7 +26,7 @@ If you find DenseNet useful in your research, please consider citing:
 0. [PyTorch Implementation](https://github.com/bamos/densenet.pytorch) by Brandon Amos.
 0. [MXNet Implementation](https://github.com/Nicatio/Densenet/tree/master/mxnet) by Nicatio.
 0. [MXNet Implementation (supporting ImageNet)](https://github.com/bruinxiong/densenet.mxnet) by Xiong Lin.
-0. [MXNet Implementation] (https://github.com/miraclewkf/DenseNet) by miraclewkf.
+0. [MXNet Implementation](https://github.com/miraclewkf/DenseNet) by miraclewkf.
 0. [Tensorflow Implementation](https://github.com/YixuanLi/densenet-tensorflow) by Yixuan Li.
 0. [Tensorflow Implementation](https://github.com/LaurentMazare/deep-models/tree/master/densenet) by Laurent Mazare.
 0. [Tensorflow Implementation (with BC structure)](https://github.com/ikhlestov/vision_networks) by Illarion Khlestov.
