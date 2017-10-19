@@ -36,6 +36,7 @@ If you find DenseNet useful in your research, please consider citing:
 0. [Keras Implementation (with BC structure)](https://github.com/titu1994/DenseNet) by Somshubra Majumdar.
 0. [Chainer Implementation](https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya.
 0. [Chainer Implementation](https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo.
+0. [3D-DenseNet (supporting ModelNet)](https://github.com/barrykui/3ddensenet.torch) by Barry Kui.
 
 Note that we only listed some early implementations here, and didn't label all implementations which support BC structures. 
 
