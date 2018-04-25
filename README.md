@@ -48,6 +48,7 @@ Note that we only listed some early implementations here. If you would like to a
 0. [DSOD: Learning Deeply Supervised Object Detectors from Scratch](https://github.com/szq0214/DSOD)
 0. [CondenseNet: An Efficient DenseNet using Learned Group Convolutions](https://github.com/ShichenLiu/CondenseNet)
 0. [Fully Convolutional DenseNets for Semantic Segmentation](https://github.com/SimJeg/FC-DenseNet)
+0. [Pelee: A Real-Time Object Detection System on Mobile Devices](https://github.com/Robert-JunWang/Pelee)
 
 
 
