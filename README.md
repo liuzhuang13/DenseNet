@@ -38,7 +38,9 @@ Our [[Caffe]](https://github.com/liuzhuang13/DenseNetCaffe), Our memory-efficien
 [[Chainer]](https://github.com/t-hanya/chainer-DenseNet) by Toshinori Hanya, 
 [[Chainer]](https://github.com/yasunorikudo/chainer-DenseNet) by Yasunori Kudo, 
 [[Torch 3D-DenseNet]](https://github.com/barrykui/3ddensenet.torch) by Barry Kui,
-[[Keras]](https://github.com/cmasch/densenet) by Christopher Masch.
+[[Keras]](https://github.com/cmasch/densenet) by Christopher Masch,
+[[Tensorflow2]](https://github.com/okason97/DenseNet-Tensorflow2) by Gaston Rios and Ulises Jeremias.
+
 
 
 Note that we only listed some early implementations here. If you would like to add yours, please submit a pull request.
