@@ -7,7 +7,7 @@ This repository contains the code for DenseNet introduced in the following paper
 [Gao Huang](http://www.cs.cornell.edu/~gaohuang/)\*, [Zhuang Liu](https://liuzhuang13.github.io/)\*, [Laurens van der Maaten](https://lvdmaaten.github.io/) and [Kilian Weinberger](https://www.cs.cornell.edu/~kilian/) (\* Authors contributed equally).
 
 
-**Now with much more memory efficient implementation!** Please check the [technical report](https://arxiv.org/pdf/1707.06990.pdf) and [code](https://github.com/liuzhuang13/DenseNet/tree/master/models) for more infomation.
+**Now with much more memory efficient implementation!** Please check the [technical report](https://arxiv.org/pdf/1707.06990.pdf) and [code](https://github.com/liuzhuang13/DenseNet/tree/master/models) for more information.
  
 The code is built on [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
 
