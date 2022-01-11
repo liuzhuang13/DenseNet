@@ -129,6 +129,8 @@ DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
 ## Results on ImageNet and Pretrained Models
 ### Torch
 
+Note: the pre-trained models in Torch are deprecated and no longer maintained. Please use PyTorch's pre-trained [DenseNet models](https://pytorch.org/vision/stable/models.html) instead.
+
 #### Models in the original paper
 The Torch models are trained under the same setting as in [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch). The error rates shown are 224x224 1-crop test errors.
 
