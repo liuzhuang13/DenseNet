@@ -132,10 +132,10 @@ More accurate models trained with the memory efficient implementation in the [te
 
 | Network       |  Top-1 error | Torch Model |
 | ------------- | ----------- | ------------ |
-| DenseNet-264 (k=32)  |  22.1 |    [Download (256MB)](https://drive.google.com/file/d/0By1NwtA2JPGzdVRqOEotMUZrbTA/view?usp=sharing)
-| DenseNet-232 (k=48)  | 21.2 | [Download (426MB)](https://drive.google.com/open?id=0By1NwtA2JPGzdkRDaWQ5M3VHTDg)
-| DenseNet-cosine-264 (k=32) | 21.6  |  [Download (256MB)](https://drive.google.com/file/d/0By1NwtA2JPGzRDhxWGo2a3pOTjA/view?usp=sharing)
-| DenseNet-cosine-264 (k=48) | 20.4   | [Download (557MB)](https://drive.google.com/file/d/0By1NwtA2JPGzcnFDSE1HQVh4c0k/view?usp=sharing)
+| DenseNet-264 (k=32)  |  22.1 |    [Download (256MB)](https://drive.google.com/file/d/0By1NwtA2JPGzdVRqOEotMUZrbTA/view?usp=sharing&resourcekey=0-5D_u52k6wCy6doaLwdBfqw)
+| DenseNet-232 (k=48)  | 21.2 | [Download (426MB)](https://drive.google.com/file/d/0By1NwtA2JPGzdkRDaWQ5M3VHTDg/view?usp=sharing&resourcekey=0-yl4XWJ2J6GZaF6RPj43QHQ)
+| DenseNet-cosine-264 (k=32) | 21.6  |  [Download (256MB)](https://drive.google.com/file/d/0By1NwtA2JPGzRDhxWGo2a3pOTjA/view?usp=sharing&resourcekey=0-AOIBvppNz9cdDcuKvH7_aQ)
+| DenseNet-cosine-264 (k=48) | 20.4   | [Download (557MB)](https://drive.google.com/file/d/0By1NwtA2JPGzcnFDSE1HQVh4c0k/view?usp=sharing&resourcekey=0-uAyd9bsTas2twCzAZ1DUpA)
 
 
 ### Caffe
