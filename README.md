@@ -6,20 +6,35 @@ This repository contains the code for DenseNet introduced in the following paper
 
 [Gao Huang](http://www.cs.cornell.edu/~gaohuang/)\*, [Zhuang Liu](https://liuzhuang13.github.io/)\*, [Laurens van der Maaten](https://lvdmaaten.github.io/) and [Kilian Weinberger](https://www.cs.cornell.edu/~kilian/) (\* Authors contributed equally).
 
+and its journal version
 
-**Now with much more memory efficient implementation!** Please check the [technical report](https://arxiv.org/pdf/1707.06990.pdf) and [code](https://github.com/liuzhuang13/DenseNet/tree/master/models) for more infomation.
+[Convolutional Networks with Dense Connectivity](http://www.gaohuang.net/papers/DenseNet_Journal.pdf) (TPAMI 2019) 
+
+[Gao Huang](http://www.cs.cornell.edu/~gaohuang/), [Zhuang Liu](https://liuzhuang13.github.io/), [Geoff Pleiss](https://geoffpleiss.com/), [Laurens van der Maaten](https://lvdmaaten.github.io/) and [Kilian Weinberger](https://www.cs.cornell.edu/~kilian/).
+
+
+**Now with memory-efficient implementation!** Please check the [technical report](https://arxiv.org/pdf/1707.06990.pdf) and [code](https://github.com/liuzhuang13/DenseNet/tree/master/models) for more infomation.
  
 The code is built on [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
 
 ### Citation
 If you find DenseNet useful in your research, please consider citing:
 
+	@article{huang2019convolutional,
+	 title={Convolutional Networks with Dense Connectivity},
+	 author={Huang, Gao and Liu, Zhuang and Pleiss, Geoff and Van Der Maaten, Laurens and Weinberger, Kilian},
+	 journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	 year={2019}
+	 }
+	 
 	@inproceedings{huang2017densely,
-	  title={Densely connected convolutional networks},
+	  title={Densely Connected Convolutional Networks},
 	  author={Huang, Gao and Liu, Zhuang and van der Maaten, Laurens and Weinberger, Kilian Q },
 	  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
 	  year={2017}
 	}
+	
+
 
 
 ## Other Implementations
@@ -175,11 +190,15 @@ Thus, for practical use, we suggest picking one model from those Wide-DenseNet-B
 
 
 ## Updates
-**08/23/2017:**
+**12/10/2019:**
+
+1. Journal version (accepted by IEEE TPAMI) released.
+
+08/23/2017:
 
 1. Add supporting code, so one can simply *git clone* and run.
 
-**06/06/2017:**
+06/06/2017:
 
 1. Support **ultra memory efficient** training of DenseNet with *customized densely connected layer*.
 
@@ -207,6 +226,6 @@ Thus, for practical use, we suggest picking one model from those Wide-DenseNet-B
 
 ## Contact
 liuzhuangthu at gmail.com  
-gh349 at cornell.edu   
+gaohuang at tsinghua.edu.cn   
 Any discussions, suggestions and questions are welcome!
 
