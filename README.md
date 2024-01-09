@@ -14,7 +14,7 @@ The code is built on [fb.resnet.torch](https://github.com/facebook/fb.resnet.tor
 ### Citation
 If you find DenseNet useful in your research, please consider citing:
 
-	@inproceedings{huang2017densely,
+	@inproceedings{DenseNet2017,
 	  title={Densely connected convolutional networks},
 	  author={Huang, Gao and Liu, Zhuang and van der Maaten, Laurens and Weinberger, Kilian Q },
 	  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
@@ -114,17 +114,17 @@ DenseNet-BC (L=190, k=40)|25.6M |- |**3.46** | -|**17.18**
 ## Results on ImageNet and Pretrained Models
 ### Torch
 
-Note: the pre-trained models in Torch are deprecated and no longer maintained. Please use PyTorch's pre-trained [DenseNet models](https://pytorch.org/vision/stable/models.html) instead.
+**Note: the pre-trained models in Torch are deprecated and no longer maintained. Please use PyTorch's pre-trained [DenseNet models](https://pytorch.org/vision/stable/models.html) instead.**
 
 #### Models in the original paper
 The Torch models are trained under the same setting as in [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch). The error rates shown are 224x224 1-crop test errors.
 
 | Network       |  Top-1 error | Torch Model |
 | ------------- | ----------- | ----------- |
-| DenseNet-121 (k=32)  |  25.0    | [Download (64.5MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HWFViYlVlZk9sdHc)       |
-| DenseNet-169 (k=32)  | 23.6     | [Download (114.4MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HY25Dc2VrUGlVSGc)       |
-| DenseNet-201 (k=32)  | 22.5     | [Download (161.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HaDdpNmlWRjJkd3c)       |
-| DenseNet-161 (k=48)  | 22.2     | [Download (230.8MB)](https://drive.google.com/open?id=0B8ReS-sYUS-HVXp2RExSTmMzZVU)
+| DenseNet-121 (k=32)  |  25.0    | [Download (64.5MB)]       |
+| DenseNet-169 (k=32)  | 23.6     | [Download (114.4MB)]       |
+| DenseNet-201 (k=32)  | 22.5     | [Download (161.8MB)]       |
+| DenseNet-161 (k=48)  | 22.2     | [Download (230.8MB)]
 
 #### Models in the tech report
 More accurate models trained with the memory efficient implementation in the [technical report](https://arxiv.org/pdf/1707.06990.pdf). 
@@ -132,10 +132,10 @@ More accurate models trained with the memory efficient implementation in the [te
 
 | Network       |  Top-1 error | Torch Model |
 | ------------- | ----------- | ------------ |
-| DenseNet-264 (k=32)  |  22.1 |    [Download (256MB)](https://drive.google.com/file/d/0By1NwtA2JPGzdVRqOEotMUZrbTA/view?usp=sharing&resourcekey=0-5D_u52k6wCy6doaLwdBfqw)
-| DenseNet-232 (k=48)  | 21.2 | [Download (426MB)](https://drive.google.com/file/d/0By1NwtA2JPGzdkRDaWQ5M3VHTDg/view?usp=sharing&resourcekey=0-yl4XWJ2J6GZaF6RPj43QHQ)
-| DenseNet-cosine-264 (k=32) | 21.6  |  [Download (256MB)](https://drive.google.com/file/d/0By1NwtA2JPGzRDhxWGo2a3pOTjA/view?usp=sharing&resourcekey=0-AOIBvppNz9cdDcuKvH7_aQ)
-| DenseNet-cosine-264 (k=48) | 20.4   | [Download (557MB)](https://drive.google.com/file/d/0By1NwtA2JPGzcnFDSE1HQVh4c0k/view?usp=sharing&resourcekey=0-uAyd9bsTas2twCzAZ1DUpA)
+| DenseNet-264 (k=32)  |  22.1 |    [Download (256MB)]
+| DenseNet-232 (k=48)  | 21.2 | [Download (426MB)]
+| DenseNet-cosine-264 (k=32) | 21.6  |  [Download (256MB)]
+| DenseNet-cosine-264 (k=48) | 20.4   | [Download (557MB)]
 
 
 ### Caffe
@@ -207,6 +207,5 @@ Thus, for practical use, we suggest picking one model from those Wide-DenseNet-B
 
 ## Contact
 liuzhuangthu at gmail.com  
-gh349 at cornell.edu   
 Any discussions, suggestions and questions are welcome!
 
